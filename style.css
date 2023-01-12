@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3f2154;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.left-side > h1{
+    font-size: 3vw;
+    color: whitesmoke;
+}
+
+.logo-abas{
+    background-color: azure;
+    width: 35vw;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.right-side{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #6e3198;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card > h1{
+    color: white;
+    font-weight: 800;
+    margin: 0;
+}
+
+.form-all{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.form > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #763f9b;
+    color: antiquewhite;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form > label{
+    color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+.form > input::placeholder{
+    color: azure;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #3f2154;
+    background-color: azure;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #2d183b;
+}
+
+#textForm{
+    color: whitesmoke;
+    width: auto;
+    margin: 5px;
+    font-style: italic;
+}
+
+#textEmail{
+    color: whitesmoke;
+    width: auto;
+    margin: 5px;
+    font-style: italic;
+}
+
+#textPassword{
+    color: whitesmoke;
+    width: auto;
+    margin: 5px;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 950px) {
+    .card{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login{
+        flex-direction: column;
+    }
+
+    .left-side > h1{
+        display: none;
+    }
+
+    .left-side{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-side{
+        width: 100%;
+        height: auto;
+    }
+
+}
